@@ -62,7 +62,15 @@ http.createServer(function (req, res) {
         computePage(req.url, res);
     }
     else {
-        res.write("404")
+        res.write("<html>");
+        res.write("<head>");
+        res.write("<title>" + "Random" + req.url + "</title>");
+        res.write("</head>");
+        res.write("<body>");
+        res.write("<h1>Page was not found!</h>");
+        res.write("<h1>" + req.url + "</h1>");
+        res.write("</html>");
+        res.write("</body>");
         return res.end();
     }
 }).listen(8080);
