@@ -1,0 +1,9 @@
+﻿{
+  "name": "inl-mning-vg",
+  "version": "0.0.0",
+  "description": "InlämningVG",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  }
+}
